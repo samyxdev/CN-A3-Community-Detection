@@ -1,0 +1,14 @@
+Network name;Method;Modularity
+nets\model\256_4_4_2_15_18_p;Ref1;0.7818042125081899
+nets\model\256_4_4_4_13_18_p;Ref1;0.6967733384846297
+nets\model\rb125;Ref1;0.60922656439419
+nets\model\rb125;Ref2;0.5727258700875049
+nets\model\rb125;Ref3;0.5677444951398535
+nets\real\cat_cortex_sim;Ref1;0.3624034600799502
+nets\real\dolphins;Ref1;0.37348206162730896
+nets\real\football;Ref1;0.553973318714423
+nets\real\zachary_unwh;Ref1;0.37146614069691
+nets\toy\20x2+5x2;Ref1;0.5415859964709342
+nets\toy\graph3+1+3;Ref1;0.3515625
+nets\toy\graph4+4;Ref1;0.44285714285714284
+nets\toy\star;Ref1;0.0
