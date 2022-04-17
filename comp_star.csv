@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+star.clu,star_asyn.clu,0.0000,1.0000,1.0000
+star.clu,star_girvan-newman.clu,0.0000,1.0000,1.0000
+star.clu,star_greedy.clu,0.0000,1.0000,1.0000
+star.clu,star_louvain.clu,0.0000,1.0000,1.0000
+star.clu,star_spinglass.clu,0.1588,0.0000,0.7778
+star.clu,star_walktrap.clu,0.0000,1.0000,1.0000

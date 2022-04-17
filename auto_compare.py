@@ -19,22 +19,49 @@ for r, s, files in os.walk(part_path):
         print("To be compared paritions: ", to_compare_clu)
 
         # Compare each to_compare_clu files to references clu files
+
+        # First, create the general csv file to which we will append all the data
+        gather_csv_path = os.path.join("comp_" + r.split("\\")[-1] + ".csv")
+        gather_csv_file = open(gather_csv_path, "w")
+
+        gather_csv_file.write(",".join(["Reference Name",
+                                "Compared Name",
+                                "Normalized Mutual Information Index (arithmetic)",
+                                "Normalized Variation Of Information Metric",
+                                "Jaccard Index"]) + "\n")
+
+        # Then, compare each non-ref clu files to references partitions
         for i, ref in enumerate(ref_clu):
             for f in to_compare_clu:
                 print(f"Comparing {f} to {ref}")
-                csv_path = os.path.join(r, ref.split(".")[0] + ".csv")
+                temp_csv_path = os.path.join(r, ref.split(".")[0] + ".csv")
                 subprocess.run([radatools_path,
                                     os.path.join(r, f),
                                     os.path.join(r, ref),
-                                    csv_path,
+                                    temp_csv_path,
                                     "T"],
                                     stdout=subprocess.DEVNULL,
                                     stderr=subprocess.STDOUT)
 
+                print(f"Appending {temp_csv_path} to {gather_csv_path}")
 
+                temp_csv_file = open(temp_csv_path, "r")
+                temp_csv_reader = csv.DictReader(temp_csv_file, delimiter="\t")
+
+                for row in temp_csv_reader:
+                    gather_csv_file.write(",".join([ref,
+                                                f,
+                                                row["Normalized_Variation_Of_Information_Metric"],
+                                                row["Normalized_Mutual_Information_Index_(arithmetic)"],
+                                                row["Jaccard_Index"]]) + "\n")
+
+                temp_csv_file.close()
+                os.remove(temp_csv_path)
+        """
         if len(ref_clu):
             # Filtering comparaison csv's to a new csv
-            with open(os.path.join(r, ref_clu[0].split(".")[0] + "_comp.csv"), "w") as csvfile:
+            general_csv_path = os.path.join(r, ref_clu[0].split(".")[0] + "_comp.csv")
+            with open(general_csv_path, "w") as csvfile:
                 csw = csv.writer(csvfile)
                 csw.writerow(["Reference Name",
                                 "Compared Name",
@@ -46,6 +73,8 @@ for r, s, files in os.walk(part_path):
                     for f in to_compare_clu:
                         to_insert_csv_path = os.path.join(r, ref.split(".")[0] + ".csv")
                         to_insert_csv_file = open(to_insert_csv_path, "r")
+
+                        print(f"Reading {to_insert_csv_path} for append to {general_csv_path}...")
 
                         to_insert_csvreader = csv.DictReader(to_insert_csv_file, delimiter="\t")
 
@@ -59,3 +88,4 @@ for r, s, files in os.walk(part_path):
                             csw.writerow(to_write)
 
                         to_insert_csv_file.close()
+    """

@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+graph4+4.clu,graph4+4_asyn.clu,0.0000,1.0000,1.0000
+graph4+4.clu,graph4+4_girvan-newman.clu,0.0000,1.0000,1.0000
+graph4+4.clu,graph4+4_greedy.clu,0.3538,0.5856,0.4615
+graph4+4.clu,graph4+4_louvain.clu,0.3538,0.5856,0.4615
+graph4+4.clu,graph4+4_spinglass.clu,0.3538,0.5856,0.4615
+graph4+4.clu,graph4+4_walktrap.clu,0.0000,1.0000,1.0000

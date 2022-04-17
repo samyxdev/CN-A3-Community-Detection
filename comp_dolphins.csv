@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+dolphins.clu,dolphins_asyn.clu,0.2756,0.4979,0.3763
+dolphins.clu,dolphins_girvan-newman.clu,0.2199,0.5542,0.4370
+dolphins.clu,dolphins_greedy.clu,0.1883,0.5727,0.5041
+dolphins.clu,dolphins_louvain.clu,0.2526,0.5162,0.3791
+dolphins.clu,dolphins_spinglass.clu,0.2149,0.5865,0.4015
+dolphins.clu,dolphins_walktrap.clu,0.2045,0.5372,0.4796
