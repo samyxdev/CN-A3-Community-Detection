@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+20x2+5x2.clu,20x2+5x2_asyn.clu,0.0000,1.0000,1.0000
+20x2+5x2.clu,20x2+5x2_girvan-newman.clu,0.0000,1.0000,1.0000
+20x2+5x2.clu,20x2+5x2_greedy.clu,0.0000,1.0000,1.0000
+20x2+5x2.clu,20x2+5x2_louvain.clu,0.0000,1.0000,1.0000
+20x2+5x2.clu,20x2+5x2_spinglass.clu,0.0000,1.0000,1.0000
+20x2+5x2.clu,20x2+5x2_walktrap.clu,0.0000,1.0000,1.0000

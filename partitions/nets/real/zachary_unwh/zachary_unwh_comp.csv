@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+zachary_unwh.clu,zachary_unwh_asyn.clu,0.3169,0.5042,0.3498
+zachary_unwh.clu,zachary_unwh_girvan-newman.clu,0.3169,0.5042,0.3498
+zachary_unwh.clu,zachary_unwh_greedy.clu,0.3169,0.5042,0.3498
+zachary_unwh.clu,zachary_unwh_louvain.clu,0.3169,0.5042,0.3498
+zachary_unwh.clu,zachary_unwh_spinglass.clu,0.3169,0.5042,0.3498
+zachary_unwh.clu,zachary_unwh_walktrap.clu,0.3169,0.5042,0.3498

@@ -1,0 +1,7 @@
+Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
+cat_cortex_sim.clu,cat_cortex_sim_asyn.clu,0.1761,0.7060,0.5841
+cat_cortex_sim.clu,cat_cortex_sim_girvan-newman.clu,0.1761,0.7060,0.5841
+cat_cortex_sim.clu,cat_cortex_sim_greedy.clu,0.1761,0.7060,0.5841
+cat_cortex_sim.clu,cat_cortex_sim_louvain.clu,0.1761,0.7060,0.5841
+cat_cortex_sim.clu,cat_cortex_sim_spinglass.clu,0.1761,0.7060,0.5841
+cat_cortex_sim.clu,cat_cortex_sim_walktrap.clu,0.1761,0.7060,0.5841
