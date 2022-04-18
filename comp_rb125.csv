@@ -1,19 +1,19 @@
 Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
-rb125-1.clu,rb125_asyn.clu,0.3049,0.6821,0.2284
+rb125-1.clu,rb125_asyn.clu,0.3215,0.6412,0.2434
 rb125-1.clu,rb125_girvan-newman.clu,0.1587,0.8044,0.5711
 rb125-1.clu,rb125_greedy.clu,0.1223,0.8450,0.6167
 rb125-1.clu,rb125_louvain.clu,0.1223,0.8450,0.6167
-rb125-1.clu,rb125_spinglass.clu,0.2161,0.7431,0.4494
+rb125-1.clu,rb125_spinglass.clu,0.2264,0.7372,0.3781
 rb125-1.clu,rb125_walktrap.clu,0.1400,0.8234,0.6203
-rb125-2.clu,rb125_asyn.clu,0.0491,0.9620,0.6740
+rb125-2.clu,rb125_asyn.clu,0.1120,0.9089,0.3618
 rb125-2.clu,rb125_girvan-newman.clu,0.1970,0.8279,0.2733
 rb125-2.clu,rb125_greedy.clu,0.2111,0.8119,0.2703
 rb125-2.clu,rb125_louvain.clu,0.2111,0.8119,0.2703
-rb125-2.clu,rb125_spinglass.clu,0.1757,0.8504,0.3270
+rb125-2.clu,rb125_spinglass.clu,0.1469,0.8771,0.3844
 rb125-2.clu,rb125_walktrap.clu,0.2157,0.8085,0.2523
-rb125-3.clu,rb125_asyn.clu,0.0450,0.9653,0.6814
+rb125-3.clu,rb125_asyn.clu,0.1079,0.9126,0.3639
 rb125-3.clu,rb125_girvan-newman.clu,0.1929,0.8321,0.2746
 rb125-3.clu,rb125_greedy.clu,0.2152,0.8089,0.2659
 rb125-3.clu,rb125_louvain.clu,0.2152,0.8089,0.2659
-rb125-3.clu,rb125_spinglass.clu,0.1716,0.8544,0.3288
+rb125-3.clu,rb125_spinglass.clu,0.1510,0.8740,0.3781
 rb125-3.clu,rb125_walktrap.clu,0.2115,0.8128,0.2533

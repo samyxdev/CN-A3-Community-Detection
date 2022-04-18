@@ -155,7 +155,7 @@ for r, s, files in os.walk(nets_path):
 
             plt.clf()
 
-            nx.draw(G, pos=pos, node_size=node_size)
+            nx.draw(G, pos=pos, node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_intro-plot.png')) # to save the plot
             plt.clf()
 
@@ -194,8 +194,9 @@ for r, s, files in os.walk(nets_path):
             # We use the default *resolution* parameter set to 1.
 
 
-
-            print("Modularity: ", nx_comm.modularity(G, communities))
+            mod = nx_comm.modularity(G, communities)
+            print("Modularity:", mod)
+            csw.writerow([os.path.join(network_f, network_name), "Greedy", mod])
 
 
             # ### Community visualisation
@@ -226,7 +227,7 @@ for r, s, files in os.walk(nets_path):
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
 
             # draw nodes, with a different color for each community
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_greedy.png'))
             plt.clf()
 
@@ -297,7 +298,7 @@ for r, s, files in os.walk(nets_path):
                 #cmap = cm.get_cmap('tab20', max(part.values()) + 1)
             else:
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
 
             plt.savefig(os.path.join(p_i, network_name + '_asyn.png'))
             plt.clf()
@@ -374,7 +375,7 @@ for r, s, files in os.walk(nets_path):
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
 
             # draw nodes, with a different color for each community
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_louvain.png'))
             plt.clf()
 
@@ -470,7 +471,7 @@ for r, s, files in os.walk(nets_path):
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
 
             # draw nodes, with a different color for each community
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_spinglass.png'))
             plt.clf()
 
@@ -550,7 +551,7 @@ for r, s, files in os.walk(nets_path):
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
 
             # draw nodes, with a different color for each community
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_walktrap.png'))
             plt.clf()
 
@@ -636,7 +637,7 @@ for r, s, files in os.walk(nets_path):
             else:
                 cmap = cm.get_cmap('tab20', max(part.values()) + 1)
             # draw nodes, with a different color for each community
-            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size)
+            nx.draw(G, pos=pos, cmap=cmap, node_color=list(part.values()), node_size=node_size, width=0.4, edge_color='0.5')
             plt.savefig(os.path.join(p_i, network_name + '_girvan-newman.png'))
             plt.clf()
 

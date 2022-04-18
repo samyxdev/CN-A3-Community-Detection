@@ -1,7 +1,1 @@
 Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
-graph3+1+3.clu,graph3+1+3_asyn.clu,0.1651,0.8095,0.6667
-graph3+1+3.clu,graph3+1+3_girvan-newman.clu,0.1651,0.8095,0.6667
-graph3+1+3.clu,graph3+1+3_greedy.clu,0.1651,0.8095,0.6667
-graph3+1+3.clu,graph3+1+3_louvain.clu,0.1651,0.8095,0.6667
-graph3+1+3.clu,graph3+1+3_spinglass.clu,0.1651,0.8095,0.6667
-graph3+1+3.clu,graph3+1+3_walktrap.clu,0.1651,0.8095,0.6667

@@ -1,7 +1,7 @@
 Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
-football.clu,football_asyn.clu,0.1360,0.8652,0.6087
+football.clu,football_asyn.clu,0.1135,0.8858,0.6766
 football.clu,football_girvan-newman.clu,0.1202,0.8789,0.6639
 football.clu,football_greedy.clu,0.2528,0.7141,0.3709
 football.clu,football_louvain.clu,0.1148,0.8850,0.6959
-football.clu,football_spinglass.clu,0.1148,0.8850,0.6959
+football.clu,football_spinglass.clu,0.1095,0.8903,0.7004
 football.clu,football_walktrap.clu,0.1127,0.8874,0.7115

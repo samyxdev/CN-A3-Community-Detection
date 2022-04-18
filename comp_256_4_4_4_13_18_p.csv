@@ -1,7 +1,7 @@
 Reference Name,Compared Name,Normalized Mutual Information Index (arithmetic),Normalized Variation Of Information Metric,Jaccard Index
-256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_asyn.clu,0.2500,0.6667,0.2381
+256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_asyn.clu,0.2188,0.6957,0.3016
 256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_girvan-newman.clu,0.0254,0.9517,0.9048
 256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_greedy.clu,0.0000,1.0000,1.0000
 256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_louvain.clu,0.0000,1.0000,1.0000
-256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_spinglass.clu,0.1564,0.7617,0.5161
+256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_spinglass.clu,0.1719,0.7442,0.4603
 256_4_4_4_13_18_p.clu,256_4_4_4_13_18_p_walktrap.clu,0.0254,0.9517,0.9048
