@@ -9,6 +9,16 @@ from outcome import capture
 part_path = "partitions"
 radatools_path = os.path.join("radatools-5.2-win32", "Communities_Tools", "Compare_Partitions.exe")
 
+# First, create the general csv file to which we will append all the data from each comparaisons
+gather_csv_path = os.path.join("comparaison_metrics.csv")
+gather_csv_file = open(gather_csv_path, "w")
+
+gather_csv_file.write(",".join(["Reference Name",
+                        "Compared Name",
+                        "Normalized Mutual Information Index (arithmetic)",
+                        "Normalized Variation Of Information Metric",
+                        "Jaccard Index"]) + "\n")
+
 for r, s, files in os.walk(part_path):
     if len(files):
         print(f"------- Network: {r} -----")
@@ -20,15 +30,7 @@ for r, s, files in os.walk(part_path):
 
         # Compare each to_compare_clu files to references clu files
 
-        # First, create the general csv file to which we will append all the data
-        gather_csv_path = os.path.join("comp_" + r.split("\\")[-1] + ".csv")
-        gather_csv_file = open(gather_csv_path, "w")
 
-        gather_csv_file.write(",".join(["Reference Name",
-                                "Compared Name",
-                                "Normalized Mutual Information Index (arithmetic)",
-                                "Normalized Variation Of Information Metric",
-                                "Jaccard Index"]) + "\n")
 
         # Then, compare each non-ref clu files to references partitions
         for i, ref in enumerate(ref_clu):
